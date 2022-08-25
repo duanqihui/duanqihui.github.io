@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo | about | Hexo</title>
+  <title>Hexo | 休息 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
 
@@ -18,7 +18,7 @@
   
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `Hexo | about`
+    document.title = `Hexo | 休息`
   </script>
 <meta name="generator" content="Hexo 6.2.0"></head>
 
@@ -337,39 +337,82 @@
       <div id="main-container" class="main-container">
 
 
-  <div class="about">
-  <div class="about-top">
-    <div class="about-title">
-      <h2>关于我</h2>
-    </div>
-    <div class="about-info">
-      <img class="about-avatar" src="/imgs/avatar.jpg" alt="">
-      <div class="about-detail">
-        
-          <p>姓名：段**</p>
-        
-          <p>年龄：17</p>
-        
-          <p>性别：♂</p>
-        
-          <p>家乡：江苏省常州市</p>
-        
-          <p>现居住地：常州市天宁区</p>
-        
-          <p>职业：学生</p>
-        
-          <p>喜欢：~</p>
-        
+  <style>
+pre::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  background-color:#F5F5F5;
+}
+/*定义滚动条轨道
+内阴影+圆角*/
+pre::-webkit-scrollbar-track {
+  background-color:#F5F5F5;
+}
+/*定义滑块
+内阴影+圆角*/
+pre::-webkit-scrollbar-thumb {
+  background-color: rgb(69, 83, 100);
+}
+
+pre:active {
+  background-color: rgb(81, 95, 116);
+}
+</style>
+
+<div class="article-container">
+  <div class="article">
+    <h1 class="article-title">休息</h1>
+    <div class="article-info">
+      <div class="article-info--item">
+        <div class="article-info--info">
+          
+          
+          <p class="article-info--date">日期：2022-08-25 23:06:48</p>
+        </div>
+        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
       </div>
     </div>
-  </div>
-  <div class="about-content">
+    <article class="article-content">
+      <hr>
+<p>今天晚上头怪晕的(((φ(◎ロ◎;)φ)))<br>估计平时太晚睡了<br>后面可不能这样了</p>
+
+    </article>
     
+  </div>
+  <div class="article-catelogue">
+    <div class="article-catelogue--wrapper">
+      <div class="catelogue catelogue-1">
+        <h3>目录</h3>
+        
+      </div>
+      
+    </div>
   </div>
 </div>
 
 <script src="/js/prism.js"></script>
 
+
+<script>
+  $(document).on('pjax:complete', function() {
+    const tocs = document.querySelector('.toc')
+    const as = tocs ? tocs.querySelectorAll('a') : []
+    as.forEach(a => {
+      a.addEventListener('click', e => {
+        const href = decodeURIComponent(a.href)
+        href.search(/#(.*)/)
+        const id = RegExp.$1
+        const target = document.querySelector('#' + id)
+        const top = target.offsetTop
+        document.documentElement.scrollTo({
+          top: top - 100,
+          behavior: 'smooth'
+        })
+        e.preventDefault()
+      })
+    })
+  })
+</script> 
 
 </div>
       <div class="main-right-wrapper"><div class="main-right">
