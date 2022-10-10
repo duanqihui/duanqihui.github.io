@@ -183,7 +183,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"测试","path":"2022/08/24/ceshi/"},{"title":"Hello World","path":"2022/08/23/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"画道攻略","cover":null,"path":"2022/10/07/draw/"},{"title":"测试","cover":"https://cdn.jsdelivr.net/gh/czdqhui/bloglmage@main/images/dpol5g.jpg","path":"2022/08/24/ceshi/"},{"title":"食品安全","cover":null,"path":"2022/10/07/food/"},{"title":"Hello World","path":"2022/08/23/hello-world/"},{"title":"修机攻略","cover":null,"path":"2022/10/06/phone/"},{"title":"read","cover":null,"path":"2022/10/04/read/"},{"title":"think","cover":"https://cdn.jsdelivr.net/gh/czdqhui/bloglmage@main/images/l3jvo2.jpg","path":"2022/09/24/think/"},{"title":"弱电攻略","cover":null,"path":"2022/10/06/weak/"},{"title":"润","cover":null,"path":"2022/10/05/run/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -248,19 +248,19 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>1</span>
+            <span>4</span>
             <span>分类</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>2</span>
+            <span>9</span>
             <span>标签</span>
           </div>
         </a>
         <a href="/archives">
           <div>
-            <span>1 </span>
+            <span>3 </span>
             <span>归档</span>
           </div>
         </a>
@@ -317,15 +317,15 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>9 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>今天</span>
+        <span>2天前</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>30天</span>
+        <span>48天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -379,26 +379,32 @@ pre:active {
           
           <p class="article-info--date">日期：2022-08-24 23:32:33</p>
         </div>
-        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
+        <img src="https://cdn.jsdelivr.net/gh/czdqhui/bloglmage@main/images/dpol5g.jpg" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content">
       <h1 id="一"><a href="#一" class="headerlink" title="一"></a>一</h1><p><em>我要变斜啦</em></p>
+<p>叼你妈的</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czdqhui/bloglmage@main/images/dpol5g.jpg" alt="dpol5g"></p>
 <h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p><strong>我要变粗了</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czdqhui/bloglmage@main/images/l3jvo2.jpg" alt="l3jvo2"></p>
 <h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p><em><strong>我变得又斜又粗</strong></em></p>
 <h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p><del>我被删除了</del></p>
 <h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><blockquote>
 <p>我引用了谁</p>
 </blockquote>
 <h1 id="六"><a href="#六" class="headerlink" title="六"></a>六</h1><p><code>shen me dai ma</code></p>
-<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><pre class="line-numbers language-none"><code class="language-none">
+<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><pre><code>可恶，头好痒，要长脑子了
+</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
 you bian hua ma 
 
 bu xiao de 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><p>$$<br>1+1&#x3D;3<br>$$</p>
-<h3 id="九"><a href="#九" class="headerlink" title="九"></a>九</h3><p>我要</p>
+<h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><hr>
+<p>我要</p>
 <hr>
 <p>变了</p>
 <h1 id="10"><a href="#10" class="headerlink" title="10"></a>10</h1><p>又要</p>
@@ -416,7 +422,35 @@ bu xiao de
 <ul>
 <li>啊这</li>
 </ul>
-<h1 id="12"><a href="#12" class="headerlink" title="12"></a>12</h1><p>结束</p>
+<h1 id="12"><a href="#12" class="headerlink" title="12"></a>12</h1><table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">小可爱</td>
+<td align="center">18</td>
+<td align="right">吃可爱多</td>
+</tr>
+<tr>
+<td align="left">小小勇敢</td>
+<td align="center">20</td>
+<td align="right">爬棵勇敢树</td>
+</tr>
+<tr>
+<td align="left">小小小机智</td>
+<td align="center">22</td>
+<td align="right">看一本机智书</td>
+</tr>
+</tbody></table>
+<h2 id="13"><a href="#13" class="headerlink" title="13"></a>13</h2><p>$$<br>  \begin{pmatrix}<br>  1 &amp; a_1 &amp; a_1^2 &amp; \cdots &amp; a_1^n \<br>  1 &amp; a_2 &amp; a_2^2 &amp; \cdots &amp; a_2^n \<br>  \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>  1 &amp; a_m &amp; a_m^2 &amp; \cdots &amp; a_m^n \<br>  \end{pmatrix}<br>$$</p>
+<p>{喜大普奔|hē hē hē hē}</p>
+<p><u>下面被划了？<u><a href="%E7%9F%A5%E9%81%93">^sb</a></p>
+<p>结束</p>
+<h1 id="14"><a href="#14" class="headerlink" title="14"></a>14</h1><p>不知道要打什么<br>这样就是回车了最斯科拉就跨界八十九九十是否是灌水灌水师父的吩咐大概是根深蒂固</p>
 
     </article>
     
@@ -425,10 +459,15 @@ bu xiao de
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目录</h3>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-number">1.1.</span> <span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89"><span class="toc-number">1.2.</span> <span class="toc-text">三</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B"><span class="toc-number">1.3.</span> <span class="toc-text">四</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94"><span class="toc-number">1.4.</span> <span class="toc-text">五</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD"><span class="toc-number">2.</span> <span class="toc-text">六</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7"><span class="toc-number">2.1.</span> <span class="toc-text">7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8"><span class="toc-number">2.2.</span> <span class="toc-text">8</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%9D"><span class="toc-number">2.2.1.</span> <span class="toc-text">九</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10"><span class="toc-number">3.</span> <span class="toc-text">10</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#11"><span class="toc-number">3.0.0.0.1.</span> <span class="toc-text">11</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#12"><span class="toc-number">4.</span> <span class="toc-text">12</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-number">1.1.</span> <span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89"><span class="toc-number">1.2.</span> <span class="toc-text">三</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B"><span class="toc-number">1.3.</span> <span class="toc-text">四</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94"><span class="toc-number">1.4.</span> <span class="toc-text">五</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD"><span class="toc-number">2.</span> <span class="toc-text">六</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7"><span class="toc-number">2.1.</span> <span class="toc-text">7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8"><span class="toc-number">2.2.</span> <span class="toc-text">8</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#9"><span class="toc-number">2.2.1.</span> <span class="toc-text">9</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10"><span class="toc-number">3.</span> <span class="toc-text">10</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#11"><span class="toc-number">3.0.0.0.1.</span> <span class="toc-text">11</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#12"><span class="toc-number">4.</span> <span class="toc-text">12</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#13"><span class="toc-number">4.1.</span> <span class="toc-text">13</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#14"><span class="toc-number">5.</span> <span class="toc-text">14</span></a></li></ol>
       </div>
       
         <div class="catelogue catelogue-2">
+          
+            <p>
+              <span>上一篇：</span>
+              <a href="/2022/09/24/think/">think</a>
+            </p>
            
           
             <p>
